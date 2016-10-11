@@ -1,4 +1,5 @@
-﻿Gui, Add, ActiveX, w800 h800 vwb, Shell.Explorer
+Gui, Add, ActiveX, w800 h800 vwb, Shell.Explorer
+wb.silent := true ; Surpress JS Errors
 wb.Navigate(A_WorkingDir . "\ed.html")
 Gui,+AlwaysOnTop +Resize +MaximizeBox +MinimizeBox
 Gui,Show
